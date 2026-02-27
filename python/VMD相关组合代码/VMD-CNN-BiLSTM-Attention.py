@@ -49,13 +49,13 @@ from tensorflow.keras.models import Model
 warnings.filterwarnings("ignore") #取消警告
 
 
-dataset=pd.read_csv("电力负荷预测数据2.csv",encoding='gb2312')
+dataset=pd.read_csv("data.csv",encoding='gb2312')
 # 使用pandas模块的read_csv函数读取名为"电力负荷预测数据2.csv"的文件。
 # 参数'encoding'设置为'gbk'，这通常用于读取中文字符，确保文件中的中文字符能够正确读取。
 # 读取的数据被存储在名为'dataset'的DataFrame变量中。
 print(dataset)#显示dataset数据
 
-dataset_vmd = pd.read_excel("VMD.xlsx")
+dataset_vmd = pd.read_excel("VMDdata.xlsx")
 # 使用pandas模块的read_excel函数读取名为"VMD.xlsx"的文件。
 values_vmd = dataset_vmd.values
 values_vmd = values_vmd.astype('float32')
