@@ -55,8 +55,7 @@ dataset=pd.read_csv("data.csv",encoding='gb2312')
 # 读取的数据被存储在名为'dataset'的DataFrame变量中。
 print(dataset)#显示dataset数据
 
-file_path = os.path.join(os.getcwd(), "VMDdata.xlsx")
-dataset_vmd = pd.read_excel(file_path)
+dataset_vmd = pd.read_excel('/kaggle/working/AquacultureInsight/python/VMD相关组合代码/VMDdata.xlsx')
 # dataset_vmd = pd.read_excel("VMDdata.xlsx")
 # 使用pandas模块的read_excel函数读取名为"VMD.xlsx"的文件。
 values_vmd = dataset_vmd.values
